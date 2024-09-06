@@ -1,0 +1,83 @@
+const Footer = () => {
+	return (
+		<footer className='bg-gray-900 text-white py-10 px-5 md:px-20'>
+			<div className='max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10'>
+				{/* Left Section - Logo and Description */}
+				<div>
+					<h2 className='text-2xl font-bold mb-4'>WCS</h2>
+					<p className='text-gray-400 mb-4'>
+						With WCS, discover unbeatable deals on high-performance gaming PCs,
+						professional workstations, top-brand TVs, and premium computer
+						hardware. We customize systems to meet your needs, ensuring top-tier
+						performance for work, play, and everything in between.
+					</p>
+				</div>
+
+				{/* Middle Section - Shop Categories */}
+				<div>
+					<h3 className='text-xl font-semibold mb-4'>SHOP CATEGORIES</h3>
+					<ul className='text-gray-400 space-y-2'>
+						<li>
+							<a href='#' className='hover:underline'>
+								Custom PC
+							</a>
+						</li>
+						<li>
+							<a href='#' className='hover:underline'>
+								PC Components
+							</a>
+						</li>
+						<li>
+							<a href='#' className='hover:underline'>
+								PC Peripherals
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				{/* Right Section - Contact Information */}
+				<div>
+					<h3 className='text-xl font-semibold mb-4'>CONTACT US</h3>
+					<p className='text-gray-400'>
+						Store Address: Shah ali plaza, floor no, shop no <br />
+						Mirpur 10, Dhaka-1216
+					</p>
+					<p className='text-gray-400 mt-4'>
+						Phone: +88017221321 <br />
+						10am - 8pm (Mon-Sat)
+					</p>
+					<p className='text-gray-400 mt-4'>
+						Mail:{" "}
+						<a
+							href='mailto:support@modxcomputers.com'
+							className='hover:underline'
+						>
+							support@wcs.com
+						</a>
+					</p>
+
+					{/* Social Media Icons */}
+					<div className='flex space-x-3 mt-4'>
+						<a href='#'>
+							<i className='fab fa-facebook-f'>FB</i>
+						</a>
+						<a href='#'>
+							<i className='fab fa-instagram'>Insta</i>
+						</a>
+						<a href='#'>
+							<i className='fab fa-youtube'>YT</i>
+						</a>
+						<a href='#'>
+							<i className='fab fa-whatsapp'>TikTok</i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div className='mt-10 text-center text-gray-500 text-sm'>
+				© 2024 World Computer System. All Rights Reserved.
+			</div>
+		</footer>
+	);
+};
+
+export default Footer;
