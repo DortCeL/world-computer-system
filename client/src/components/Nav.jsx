@@ -12,13 +12,14 @@ export default function Nav() {
 	];
 
 	return (
-		<nav className=' flex justify-between items-center pt-5'>
+		<nav className='bg-black flex justify-between items-center py-3'>
 			<Link to='/'>
 				<img
 					src='./assets/wcs-logo.png'
 					alt='WCS'
-					className='md:w-36 w-20 md:ml-16 ml-7 cursor-pointer'
+					className='md:w-28 w-20 md:ml-16 ml-7 cursor-pointer'
 				/>
+				{/* <h1 className='font-extrabold text-4xl text-blue-500'>WCS</h1> */}
 			</Link>
 
 			<img
@@ -28,7 +29,7 @@ export default function Nav() {
 			/>
 
 			<ul
-				className={`bg-[#2b232350] md:rounded-l-full backdrop-blur-lg md:pl-10 md:pr-48 pr-20 z-10
+				className={`bg-[#91898935] md:rounded-l-full backdrop-blur-lg md:pl-10 md:pr-48 pr-20 z-10
 				md:static fixed top-0 md:h-auto h-screen duration-300 ease-in-out ${
 					!isOpen ? "right-[-100%]" : "right-0"
 				}
