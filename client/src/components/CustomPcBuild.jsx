@@ -5,7 +5,7 @@ const CustomPCBuild = () => {
 	};
 
 	return (
-		<div className='py-8 px-[25%]'>
+		<div className='py-8 md:px-[25%] px-4'>
 			<h1 className='text-4xl font-bold text-center mb-4'>
 				Build Your Custom PC
 			</h1>
