@@ -1,4 +1,9 @@
 const CustomPCBuild = () => {
+	const images = {
+		intel: "./assets/intel-build.png",
+		amd: "./assets/amd-build.png",
+	};
+
 	return (
 		<div className='py-8 px-[25%]'>
 			<h1 className='text-4xl font-bold text-center mb-4'>
@@ -13,7 +18,7 @@ const CustomPCBuild = () => {
 				<div className='border rounded-lg shadow-lg overflow-hidden'>
 					{/* Card image */}
 					<img
-						src='./src/assets/intel-build.png'
+						src={images.intel}
 						alt='Intel Custom PC'
 						className='w-full object-cover'
 					/>
@@ -39,7 +44,7 @@ const CustomPCBuild = () => {
 				{/* AMD Card */}
 				<div className='border rounded-lg shadow-lg overflow-hidden'>
 					<img
-						src='./src/assets/amd-build.png'
+						src={images.amd}
 						alt='AMD Custom PC'
 						className='w-full object-cover'
 					/>

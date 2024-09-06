@@ -13,17 +13,13 @@ export default function Nav() {
 	return (
 		<nav className=' flex justify-between items-center pt-5'>
 			<img
-				src='./src/assets/wcs-logo.png'
+				src='./assets/wcs-logo.png'
 				alt='WCS'
 				className='md:w-36 w-20 md:ml-16 ml-7 cursor-pointer'
 			/>
 
 			<img
-				src={
-					isOpen
-						? "./src/assets/icon-close.svg"
-						: "./src/assets/icon-hamburger.svg"
-				}
+				src={isOpen ? "./assets/icon-close.svg" : "./assets/icon-hamburger.svg"}
 				className='z-20 fixed right-5 top-6 cursor-pointer md:hidden'
 				onClick={() => setIsOpen(!isOpen)}
 			/>
