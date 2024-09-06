@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Nav() {
 	const [isOpen, setIsOpen] = useState(false);
@@ -12,11 +13,13 @@ export default function Nav() {
 
 	return (
 		<nav className=' flex justify-between items-center pt-5'>
-			<img
-				src='./assets/wcs-logo.png'
-				alt='WCS'
-				className='md:w-36 w-20 md:ml-16 ml-7 cursor-pointer'
-			/>
+			<Link to='/'>
+				<img
+					src='./assets/wcs-logo.png'
+					alt='WCS'
+					className='md:w-36 w-20 md:ml-16 ml-7 cursor-pointer'
+				/>
+			</Link>
 
 			<img
 				src={isOpen ? "./assets/icon-close.svg" : "./assets/icon-hamburger.svg"}

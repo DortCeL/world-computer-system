@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const CustomPCBuild = () => {
 	const images = {
 		intel: "./assets/intel-build.png",
@@ -35,9 +37,11 @@ const CustomPCBuild = () => {
 						<p className='text-red-500 text-lg font-bold mt-4'>
 							Starts From 30,000 Tk
 						</p>
-						<button className='mt-4 w-full bg-red-500 text-white py-2 rounded-lg'>
-							Select Option
-						</button>
+						<Link to='/intel-pc-build'>
+							<button className='mt-4 w-full bg-red-500 hover:bg-red-600 text-white py-2 rounded-lg'>
+								Select Option
+							</button>
+						</Link>
 					</div>
 				</div>
 
@@ -59,9 +63,11 @@ const CustomPCBuild = () => {
 						<p className='text-red-500 text-lg font-bold mt-4'>
 							Starts From 30,000 Tk
 						</p>
-						<button className='mt-4 w-full bg-red-500 text-white py-2 rounded-lg'>
-							Select Option
-						</button>
+						<Link to='/amd-pc-build'>
+							<button className='mt-4 w-full bg-red-500 hover:bg-red-600 text-white py-2 rounded-lg'>
+								Select Option
+							</button>
+						</Link>
 					</div>
 				</div>
 			</div>

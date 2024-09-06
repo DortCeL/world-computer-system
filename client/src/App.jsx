@@ -1,13 +1,14 @@
-import CustomPCBuild from "./components/CustomPcBuild";
-import Nav from "./components/Nav";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import IntelPcBuild from "./pages/IntelPcBuild";
 
 export default function App() {
 	return (
-		<>
-			<section className='bg-custom-gradient bg-center bg-cover'>
-				<Nav />
-				<CustomPCBuild />
-			</section>
-		</>
+		<BrowserRouter>
+			<Routes>
+				<Route path='/' element={<Home />} />
+				<Route path='/intel-pc-build' element={<IntelPcBuild />} />
+			</Routes>
+		</BrowserRouter>
 	);
 }
