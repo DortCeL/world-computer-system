@@ -33,7 +33,7 @@ export default function Nav() {
 			/>
 
 			<ul
-				className={`bg-[#9189890c] md:bg-[#9189892c] lg:rounded-l-full backdrop-blur-lg lg:pl-10 md:pr-48 pr-20 z-10
+				className={`bg-[#9189890c] lg:bg-[#9189892c] lg:rounded-l-full backdrop-blur-lg lg:pl-10 md:pr-48 pr-20 z-10
 				lg:static fixed top-0 lg:h-auto h-screen duration-300 ease-in-out ${
 					!isOpen ? "right-[-100%]" : "right-0"
 				}

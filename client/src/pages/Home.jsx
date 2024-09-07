@@ -13,17 +13,27 @@ export default function Home() {
 				{/* Hero er uporer section */}
 				<div className='flex justify-center items-center py-28 md:flex-row flex-col relative z-5'>
 					<div className='flex items-center justify-center'>
-						<div className='text-white md:ml-10 md:mr-10 '>
-							<h1 className=' font-orbitron text-4xl font-bold mb-4 '>
-								Welcome to World Computer System
-							</h1>
-							<p className=' font-roboto text-lg mb-6'>
-								We provide custom PC builds and the best computer peripherals
-								for your needs.
-							</p>
-							<button className='bg-blue-500 hover:bg-blue-600 text-white font-roboto px-6 py-3 rounded-lg'>
-								Get Started
-							</button>
+						<div className='relative md:ml-10 md:mr-10'>
+							<div className='absolute inset-0 bg-black bg-opacity-20 backdrop-blur-sm rounded-3xl'></div>
+							<div className='relative text-white p-6'>
+								<h1 className='font-orbitron text-xl text-center mb-4'>
+									Welcome to{" "}
+									<span className='text-red-400 text-3xl'>
+										World Computer System
+									</span>
+								</h1>
+								<h2 className='font-roboto text-md text-center mx-auto mb-6'>
+									Build your <span className='text-blue-400'>Dream PC</span>{" "}
+									today!
+								</h2>
+								<button
+									className='bg-gradient-to-r from-red-600 to-blue-600 text-white 
+														font-roboto px-6 py-3 rounded-lg block mx-auto shadow-inner 
+														hover:from-red-700 hover:to-blue-700'
+								>
+									Get Started
+								</button>
+							</div>
 						</div>
 					</div>
 				</div>
