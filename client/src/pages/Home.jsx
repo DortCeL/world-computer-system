@@ -1,4 +1,4 @@
-import CustomPCBuild from "../components/CustomPcBuild";
+import CustomPCBuilder from "../components/CustomPcBuilder";
 import Footer from "../components/Footer";
 import Nav from "../components/Nav";
 import CategoryGrid from "../components/CategoryGrid";
@@ -16,13 +16,13 @@ export default function Home() {
 						<div className='relative md:ml-10 md:mr-10'>
 							<div className='absolute inset-0 bg-black bg-opacity-20 backdrop-blur-sm rounded-3xl'></div>
 							<div className='relative text-white p-6'>
-								<h1 className='font-orbitron md:text-xl text-md text-center mb-4'>
+								<h1 className='font-orbitron md:text-xl lg:text-2xl text-md text-center mb-4'>
 									Welcome to{" "}
-									<span className='text-red-400 md:text-3xl text-xl'>
+									<span className='text-red-400 md:text-3xl lg:text-4xl text-xl'>
 										World Computer System
 									</span>
 								</h1>
-								<h2 className='font-roboto md:text-md text-sm text-center mx-auto mb-6'>
+								<h2 className='font-roboto md:text-md lg:text-lg text-sm text-center mx-auto mb-6'>
 									Build your <span className='text-blue-400'>Dream PC</span>{" "}
 									today!
 								</h2>
@@ -41,8 +41,8 @@ export default function Home() {
 				</div>
 			</section>
 
-			<section id='custom-pc-build'>
-				<CustomPCBuild />
+			<section id='custom-pc-build' className='py-20'>
+				<CustomPCBuilder />
 			</section>
 
 			<Footer />
