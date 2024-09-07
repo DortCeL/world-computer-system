@@ -16,28 +16,35 @@ export default function Home() {
 						<div className='relative md:ml-10 md:mr-10'>
 							<div className='absolute inset-0 bg-black bg-opacity-20 backdrop-blur-sm rounded-3xl'></div>
 							<div className='relative text-white p-6'>
-								<h1 className='font-orbitron text-xl text-center mb-4'>
+								<h1 className='font-orbitron md:text-xl text-md text-center mb-4'>
 									Welcome to{" "}
-									<span className='text-red-400 text-3xl'>
+									<span className='text-red-400 md:text-3xl text-xl'>
 										World Computer System
 									</span>
 								</h1>
-								<h2 className='font-roboto text-md text-center mx-auto mb-6'>
+								<h2 className='font-roboto md:text-md text-sm text-center mx-auto mb-6'>
 									Build your <span className='text-blue-400'>Dream PC</span>{" "}
 									today!
 								</h2>
-								<button
-									className='bg-gradient-to-r from-red-600 to-blue-600 text-white 
+								<a href='#custom-pc-build'>
+									<button
+										className='bg-gradient-to-r from-red-600 to-blue-600 text-white 
 														font-roboto px-6 py-3 rounded-lg block mx-auto shadow-inner 
 														hover:from-red-700 hover:to-blue-700'
-								>
-									Get Started
-								</button>
+									>
+										Start Building
+									</button>
+								</a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
+
+			<section id='custom-pc-build'>
+				<CustomPCBuild />
+			</section>
+
 			<Footer />
 		</>
 	);
