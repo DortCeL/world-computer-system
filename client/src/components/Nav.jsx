@@ -5,32 +5,36 @@ export default function Nav() {
 	const [isOpen, setIsOpen] = useState(false);
 
 	const navLinks = [
-		{ name: "BEST DEALS" },
-		{ name: "PRODUCTS" },
-		{ name: "SERVICES" },
-		{ name: "ABOUT US" },
+		{ name: "BEST DEALS", route: "/" },
+		{ name: "PRODUCTS", route: "/" },
+		{ name: "SERVICES", route: "/" },
+		{ name: "ABOUT US", route: "/about-us" },
 	];
 
 	return (
-		<nav className='bg-black flex justify-between items-center py-3'>
+		<nav className='bg-black sticky top-0 z-10 flex justify-between items-center py-3'>
 			<Link to='/'>
-				<img
-					src='./assets/wcs-logo.png'
-					alt='WCS'
-					className='md:w-28 w-20 md:ml-16 ml-7 cursor-pointer'
-				/>
-				{/* <h1 className='font-extrabold text-4xl text-blue-500'>WCS</h1> */}
+				<div className='flex flex-row items-center gap-6'>
+					<img
+						src='./assets/wcs-logo.png'
+						alt='WCS'
+						className='lg:w-24 w-20 lg:ml-16 ml-7 cursor-pointer'
+					/>
+					<h1 className='md:block hidden text-2xl font-orbitron text-white'>
+						World Computer System
+					</h1>
+				</div>
 			</Link>
 
 			<img
 				src={isOpen ? "./assets/icon-close.svg" : "./assets/icon-hamburger.svg"}
-				className='z-20 fixed right-5 top-6 cursor-pointer md:hidden'
+				className='z-20 fixed right-5 top-6 cursor-pointer lg:hidden'
 				onClick={() => setIsOpen(!isOpen)}
 			/>
 
 			<ul
-				className={`bg-[#91898935] md:rounded-l-full backdrop-blur-lg md:pl-10 md:pr-48 pr-20 z-10
-				md:static fixed top-0 md:h-auto h-screen duration-300 ease-in-out ${
+				className={`bg-[#9189890c] md:bg-[#9189892c] lg:rounded-l-full backdrop-blur-lg lg:pl-10 md:pr-48 pr-20 z-10
+				lg:static fixed top-0 lg:h-auto h-screen duration-300 ease-in-out ${
 					!isOpen ? "right-[-100%]" : "right-0"
 				}
 			`}
@@ -38,13 +42,15 @@ export default function Nav() {
 				{navLinks.map((navlink, index) => (
 					<li
 						key={index}
-						className='md:inline-block md:ml-10 ml-5 border-b-2 border-transparent hover:border-white duration-200
-						md:my-0 my-6 cursor-pointer
+						className='lg:inline-block lg:ml-10 ml-5 border-b-2 border-transparent hover:border-white duration-200
+						lg:my-0 my-6 cursor-pointer
 						'
 					>
-						<a className='text-white text-xl md:py-5 py-3 inline-block font-normal'>
-							{navlink.name}
-						</a>
+						<Link to={navlink.route}>
+							<a className='text-white text-lg lg:py-5 py-3 inline-block font-roboto'>
+								{navlink.name}
+							</a>
+						</Link>
 					</li>
 				))}
 			</ul>

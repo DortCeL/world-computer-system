@@ -43,16 +43,16 @@ const Footer = () => {
 						Mirpur 10, Dhaka-1216
 					</p>
 					<p className='text-gray-400 mt-4'>
-						Phone: +88017221321 <br />
+						Phone: <span className='text-orange-500'>+880mobilenumber</span>{" "}
+						<br />
 						10am - 8pm (Mon-Sat)
 					</p>
 					<p className='text-gray-400 mt-4'>
-						Mail:{" "}
 						<a
 							href='mailto:support@modxcomputers.com'
-							className='hover:underline'
+							className='hover:underline text-orange-500'
 						>
-							support@wcs.com
+							wcstechnology@gmail.com
 						</a>
 					</p>
 
