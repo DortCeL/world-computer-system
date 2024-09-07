@@ -6,7 +6,7 @@ export default {
 			backgroundImage: {
 				"hero-bg": "url('/assets/blue-background.jpg')",
 				"custom-gradient":
-					"linear-gradient(to bottom, #6DAFCB, #A7A4D0, #F5C1DB)",
+					"linear-gradient(to bottom, #020024, #090979, #00d4ff)",
 			},
 		},
 	},

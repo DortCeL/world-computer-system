@@ -7,12 +7,12 @@ const CustomPCBuild = () => {
 	};
 
 	return (
-		<div className='py-8 md:px-[25%] px-4'>
+		<div className='py-8 px-4'>
 			<h1 className='text-4xl font-bold text-center mb-4'>
-				Build Your Custom PC
+				Build Your Dream PC
 			</h1>
 			<p className='text-center mb-8'>
-				Pick your favorite components and build your PC
+				Pick your favorite components and build your machine
 			</p>
 
 			<div className='grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto px-4'>
