@@ -2,9 +2,9 @@ import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 import PcBuilder from "./pages/PcBuilder";
-import Products from "./pages/Products";
 import Showcase from "./pages/Showcase";
 import Footer from "./components/Footer";
+import Products from "./pages/Products";
 
 export default function App() {
 	return (
