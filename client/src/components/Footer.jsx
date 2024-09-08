@@ -1,15 +1,15 @@
 const Footer = () => {
 	return (
-		<footer className='bg-gray-900 text-white py-10 px-5 md:px-20'>
+		<footer className='bg-black text-white py-10 px-5 md:px-20'>
 			<div className='max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10'>
 				{/* Left Section - Logo and Description */}
 				<div>
-					<h2 className='text-2xl font-bold mb-4'>WCS</h2>
+					<h2 className='text-2xl font-bold mb-4'>About us</h2>
 					<p className='text-gray-400 mb-4'>
-						With WCS, discover unbeatable deals on high-performance gaming PCs,
-						professional workstations, top-brand TVs, and premium computer
-						hardware. We customize systems to meet your needs, ensuring top-tier
-						performance for work, play, and everything in between.
+						Explore unrivaled deals on high-performance gaming rigs, elite
+						workstations, premium TVs, and cutting-edge computer hardware.
+						Tailored systems guarantee exceptional performance for work, gaming,
+						and beyond.
 					</p>
 				</div>
 

@@ -5,14 +5,15 @@ export default function Nav() {
 	const [isOpen, setIsOpen] = useState(false);
 
 	const navLinks = [
-		{ name: "BEST DEALS", route: "/" },
-		{ name: "PRODUCTS", route: "/" },
-		{ name: "SERVICES", route: "/" },
+		{ name: "HOME", route: "/" },
+		{ name: "PRODUCTS", route: "/products" },
+		{ name: "SHOWCASE", route: "/showcase" },
 		{ name: "ABOUT US", route: "/about-us" },
+		{ name: "PC BUILDER", route: "/pc-builder" },
 	];
 
 	return (
-		<nav className='bg-black sticky top-0 z-10 flex justify-between items-center py-3'>
+		<nav className='bg-black absolute w-full top-0 z-10 flex justify-between items-center py-3'>
 			<Link to='/'>
 				<div className='flex flex-row items-center gap-6'>
 					<img

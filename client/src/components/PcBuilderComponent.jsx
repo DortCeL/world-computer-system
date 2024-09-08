@@ -46,7 +46,7 @@ const componentsData = {
 	],
 };
 
-const CustomPCBuilder = () => {
+const PcBuilderComponent = () => {
 	const [selectedParts, setSelectedParts] = useState({
 		cpu: "",
 		motherboard: "",
@@ -82,7 +82,7 @@ const CustomPCBuilder = () => {
 	return (
 		<div className='flex space-x-4 p-4 max-w-7xl mx-auto '>
 			{/* Left Column - Selections */}
-			<div className='w-2/3 h-screen  grid grid-cols-1 gap-4 '>
+			<div className='w-2/3  grid grid-cols-1 gap-4 '>
 				{Object.keys(componentsData).map((category) => (
 					<div key={category} className='flex flex-col space-y-2'>
 						<label className='font-semibold capitalize'>{category}</label>
@@ -105,7 +105,7 @@ const CustomPCBuilder = () => {
 
 			{/* Right Column - Sticky Total Price */}
 			<div className='w-1/3'>
-				<div className='sticky top-4 p-4 border border-gray-300 rounded shadow-md bg-white'>
+				<div className='sticky top-36 p-4 border border-gray-300 rounded shadow-md bg-white'>
 					<h2 className='text-2xl font-semibold mb-4'>Total Price</h2>
 					<p className='text-lg font-bold'>৳{calculateTotalPrice()}</p>
 				</div>
@@ -114,4 +114,4 @@ const CustomPCBuilder = () => {
 	);
 };
 
-export default CustomPCBuilder;
+export default PcBuilderComponent;
